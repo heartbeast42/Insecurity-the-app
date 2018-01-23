@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 const Page = ({ title }) => (
   <div className="App">
     <div className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <h1>Insecurity the app</h1>
       <h2>{title}</h2>
     </div>
     <p className="App-intro">
