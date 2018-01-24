@@ -7,25 +7,28 @@ import Navbar from './navbar.js';
 const Page = ({ title }) => (
   <div className="App">
     <Navbar/>
-    <div className="App-header">
+    <main>
+      <div className="App-header">
 
 
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      <h1>Insecurity the app</h1>
-      <h2>{title}</h2>
-    </div>
-    <p className="App-intro">
-      This is the {title} page.
-    </p>
-    <p>
-      <Link to="/">Home</Link>
-    </p>
-    <p>
-      <Link to="/about">About</Link>
-    </p>
-    <p>
-      <Link to="/settings">Settings</Link>
-    </p>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <h1>Insecurity the app</h1>
+        <h2>{title}</h2>
+      </div>
+
+      <p className="App-intro">
+        This is the {title} page.
+      </p>
+      <p>
+        <Link to="/">Home</Link>
+      </p>
+      <p>
+        <Link to="/about">About</Link>
+      </p>
+      <p>
+        <Link to="/settings">Settings</Link>
+      </p>
+    </main>
   </div>
 );
 
