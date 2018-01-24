@@ -9,7 +9,7 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" href="%PUBLIC_URL%./img/favicon.png">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -23,6 +23,11 @@
     <meta name="mobile-web-app-capable" content="yes">
     <!-- Tell iOS it's a PWA -->
     <meta name="apple-mobile-web-app-capable" content="yes">
+<<<<<<< HEAD
+=======
+    <!-- Make sure theme-color is defined -->
+    <!-- <meta name="theme-color" content="#536878"> -->
+>>>>>>> pwa-test
     <!-- this is tht title -->
     <title>insecurity-the-app</title>
     <!-- Add in some basic styles for our HTML -->
@@ -36,7 +41,7 @@
       text-align: center;
     }
     .App-header {
-      background-color: #222;
+      background-color: #ddd;
       height: 150px;
       padding: 20px;
       color: white;
@@ -46,10 +51,12 @@
     }
     </style>
   </head>
+
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+
     <div id="root">
       <div class="App">
       <div class="App-header">
@@ -59,6 +66,7 @@
         How ya' feelin 😉...
       </p>
     </div>
+
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {

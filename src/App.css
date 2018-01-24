@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .App-logo {
@@ -8,10 +11,11 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #000;
   height: 150px;
   padding: 20px;
   color: white;
+  border-bottom: 1px solid #eee;
 }
 
 .App-title {
@@ -22,7 +26,26 @@
   font-size: large;
 }
 
+.sidebar {
+  background-color: #282828;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  display: none;
+}
+
+main {
+  width: 100vw;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (orientation: landscape) {
+  .sidebar {
+    background-color: #f00;
+  }
+
 }

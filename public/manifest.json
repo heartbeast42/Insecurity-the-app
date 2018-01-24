@@ -3,13 +3,13 @@
   "name": "Insecurity the app",
   "icons": [
     {
-      "src": "myIcon.png",
-      "sizes": "192x192",
+      "src": "./img/favicon.png",
+      "sizes": "192x192 64x64 32x32 24x24 16x16",
       "type": "image/png"
     }
   ],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#222",
-  "theme_color": "#222",
+  "background_color": "#ddd",
+  "theme_color": "#ddd",
   "display": "standalone"
 }
