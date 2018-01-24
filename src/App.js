@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
 // import logo from './logo.svg';
 import './App.css';
+import Navbar from './navbar.js';
 
 const Page = ({ title }) => (
   <div className="App">
@@ -40,11 +41,14 @@ const Settings = (props) => (
 class App extends Component {
   render() {
     return (
-      <Router history={browserHistory}>
-        <Route path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/settings" component={Settings}/>
-      </Router>
+      <div id="root">
+        <Navbar title={'hello there'}/>
+        <Router history={browserHistory}>
+          <Route path="/" component={Home}/>
+          <Route path="/about" component={About}/>
+          <Route path="/settings" component={Settings}/>
+        </Router>
+      </div>
     );
   }
 }
