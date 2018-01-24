@@ -6,7 +6,10 @@ import Navbar from './navbar.js';
 
 const Page = ({ title }) => (
   <div className="App">
+    <Navbar/>
     <div className="App-header">
+
+
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <h1>Insecurity the app</h1>
       <h2>{title}</h2>
@@ -42,7 +45,6 @@ class App extends Component {
   render() {
     return (
       <div id="root">
-        <Navbar title={'hello there'}/>
         <Router history={browserHistory}>
           <Route path="/" component={Home}/>
           <Route path="/about" component={About}/>
