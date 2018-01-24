@@ -27,11 +27,18 @@
 }
 
 .sidebar {
+  display: none;
+  display: block;
   background-color: #282828;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  display: none;
+  width: 200vw;
+}
+
+.close {
+  width: 100px;
+  height: 100px;
 }
 
 main {
