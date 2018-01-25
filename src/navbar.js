@@ -2,9 +2,9 @@ import React from 'react';
 
 const Navbar = (props) => {
   return (
-    <div className="sidebar bar-block">
+    <div id="mySidebar" className="sidebar bar-block">
       <div className="close-div">
-        <img className="close" src="img/close.png"/>
+        <img className="close" src="img/close.png" onClick="closeNav()" />
       </div>
       <div className="navItems">
         <a href="#" className="w3-bar-item w3-button">Link 1</a>
