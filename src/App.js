@@ -9,26 +9,8 @@ const Page = ({ title }) => (
     <Navbar/>
     <main>
       <div className="App-header">
-
-
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <h1>Insecurity the app</h1>
-        {/* <h2>{title}</h2> */}
       </div>
-
-      {/* <p className="App-intro">
-        This is the {title} page.
-      </p>
-      <p>
-        <Link to="/">Home</Link>
-      </p>
-      <p>
-        <Link to="/about">About</Link>
-      </p>
-      <p>
-        <Link to="/settings">Settings</Link>
-      </p> */}
-
     </main>
   </div>
 );
@@ -50,9 +32,12 @@ class App extends Component {
     return (
       <div id="root">
         <Router history={browserHistory}>
+          <Route path="/login" component={Page}/>
           <Route path="/" component={Page}/>
+          <Route path="/my-solutions" component={Page}/>
+          <Route path="/all-solutions" component={Page}/>
+          <Route path="/downloads" component={Page}/>
           <Route path="/about" component={Page}/>
-          <Route path="/settings" component={Page}/>
         </Router>
       </div>
     );

@@ -11,6 +11,8 @@
 }
 
 .App-header {
+  /* text-align: center; */
+
   background-color: #000;
   height: 50px;
   padding: 5px;
@@ -27,7 +29,7 @@
   font-size: large;
 }
 
-.sidebar {
+.navBar {
   background-color: #282828;
   display: flex;
   flex-wrap: nowrap;
@@ -37,9 +39,7 @@
   height: 100vh;
   padding-left: 20px;
   position: absolute;
-  z-index: 1;
-  display: none;
-  display: block;
+  z-index: 2;
 }
 
 .navItems {
@@ -57,21 +57,43 @@
   width: 100%;
 }
 
-.close {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #282828;
+.closeMenu {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0000;
   margin-right: 5px;
+  background-color: #28282800;
 }
 
-.close-div .close:hover {
-  border: 1px solid #ddd;
+.openMenu {
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px 10px 10px;
+  position: absolute;
+  z-index: 1;
+  background-color: #28282800;
+  border: 2px solid #0000;
+  border-radius: 100px;
+}
+
+.closeMenu:hover {
+  border: 2px solid #ddd;
+  border-radius: 100px;
+}
+.openMenu:hover {
+  border: 2px solid #ddd;
   border-radius: 100px;
 }
 
 main {
   width: 100vw;
-  z-index: 0;
+  /* position: absolute; */
+  /* z-index: 0; */
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
 }
 
 @keyframes App-logo-spin {
@@ -80,8 +102,10 @@ main {
 }
 
 @media (orientation: landscape) {
-  .sidebar {
+  .navBar {
     width: 20%;
+    /* position: absolute; */
+    /* z-index: 0; */
   }
 
 }
