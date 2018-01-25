@@ -13,10 +13,10 @@ const Page = ({ title }) => (
 
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <h1>Insecurity the app</h1>
-        <h2>{title}</h2>
+        {/* <h2>{title}</h2> */}
       </div>
 
-      <p className="App-intro">
+      {/* <p className="App-intro">
         This is the {title} page.
       </p>
       <p>
@@ -27,31 +27,32 @@ const Page = ({ title }) => (
       </p>
       <p>
         <Link to="/settings">Settings</Link>
-      </p>
+      </p> */}
+
     </main>
   </div>
 );
 
-const Home = (props) => (
-  <Page title="Home"/>
-);
-
-const About = (props) => (
-  <Page title="About"/>
-);
-
-const Settings = (props) => (
-  <Page title="Settings"/>
-);
+// const Home = (props) => (
+//   <Page title="Home"/>
+// );
+//
+// const About = (props) => (
+//   <Page title="About"/>
+// );
+//
+// const Settings = (props) => (
+//   <Page title="Settings"/>
+// );
 
 class App extends Component {
   render() {
     return (
       <div id="root">
         <Router history={browserHistory}>
-          <Route path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/settings" component={Settings}/>
+          <Route path="/" component={Page}/>
+          <Route path="/about" component={Page}/>
+          <Route path="/settings" component={Page}/>
         </Router>
       </div>
     );

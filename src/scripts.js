@@ -1,12 +1,12 @@
-function showNav() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-export {
-  showNav(),
-  closeNav()
-}
+// var nav = {
+//
+//   show: function () {
+//     document.getElementById("mySidebar").style.display = "block";
+//   },
+//
+//   close: function () {
+//     document.getElementById("mySidebar").style.display = "none";
+//   }
+// }
+//
+// export default nav
