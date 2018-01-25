@@ -9,7 +9,9 @@ const Page = ({ title }) => (
     <Navbar/>
     <main>
       <div className="App-header">
+        <div className="titleSpacer"></div>
         <h1>Insecurity the app</h1>
+        <div></div>
       </div>
     </main>
   </div>
