@@ -107,7 +107,7 @@ a {
   to { transform: rotate(360deg); }
 }
 
-@media (orientation: landscape) {
+@media (min-width:800px) and (orientation: landscape) {
   .navBar {
     width: 20%;
     /* position: absolute; */
