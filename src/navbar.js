@@ -30,7 +30,7 @@ class Navbar extends Component {
           {/* close icon */}
           <div className="close-div">
             <div onClick={this.navDismiss}>
-              <img className="closeMenu" src="./img/close.png" />
+              <img className="closeMenu" src="./img/close2.png" />
             </div>
           </div>
 
