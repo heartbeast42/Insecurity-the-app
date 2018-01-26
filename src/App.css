@@ -102,16 +102,23 @@ a {
   color: #eee;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+} */
+
+@media (min-width:400px) {
+  .navBar {
+    width: 35%;
+    /* position: absolute; */
+    /* z-index: 0; */
+  }
 }
 
-@media (min-width:800px) and (orientation: landscape) {
+@media (min-width:900px) {
   .navBar {
     width: 20%;
     /* position: absolute; */
     /* z-index: 0; */
   }
-
 }
