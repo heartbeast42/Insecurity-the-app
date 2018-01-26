@@ -6,7 +6,6 @@ class Card extends Component {
     super(props, context);
   }
 
-
   render() {
     return (
       <p>hi there</p>

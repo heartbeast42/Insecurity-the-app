@@ -7,9 +7,13 @@ class CardList extends Component {
     super(props, context);
   }
 
-
   render() {
     return (
+      // for (var i = 0; i < array.length; i++) {
+      //   array[i]
+      //   somthing somthing somthing darkside
+      //   somthing somthing somthing display <Card/>
+      // }
       <Card/>
     )
   }
