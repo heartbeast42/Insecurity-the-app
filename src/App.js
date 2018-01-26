@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
-// import logo from './logo.svg';
 import './App.css';
 import Navbar from './navbar.js';
 
@@ -16,18 +15,6 @@ const Page = ({ title }) => (
     </main>
   </div>
 );
-
-// const Home = (props) => (
-//   <Page title="Home"/>
-// );
-//
-// const About = (props) => (
-//   <Page title="About"/>
-// );
-//
-// const Settings = (props) => (
-//   <Page title="Settings"/>
-// );
 
 class App extends Component {
   render() {
@@ -48,3 +35,16 @@ class App extends Component {
 
 export default App;
 // view rawpwa-starter.js hosted with ❤ by GitHub
+
+
+// const Home = (props) => (
+//   <Page title="Home"/>
+// );
+//
+// const About = (props) => (
+//   <Page title="About"/>
+// );
+//
+// const Settings = (props) => (
+//   <Page title="Settings"/>
+// );
