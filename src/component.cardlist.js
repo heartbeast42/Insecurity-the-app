@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Router, browserHistory, Route, Link } from 'react-router';
+// import { Router, browserHistory, Route, Link } from 'react-router';
 import Card from './component.card.js';
 
 class CardList extends Component {
-  constructor(props, context) {
-    super(props, context);
-  }
+
+  // constructor(props, context) {
+  //   super(props, context);
+  // }
 
   render() {
     return (
@@ -14,7 +15,10 @@ class CardList extends Component {
       //   somthing somthing somthing darkside
       //   somthing somthing somthing display <Card/>
       // }
-      <Card/>
+      <div>
+        <Card className="card" />
+        <Card className="card" />
+      </div>
     )
   }
 }

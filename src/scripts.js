@@ -10,3 +10,8 @@
 // }
 //
 // export default nav
+
+function hi(){
+  console.log(window.navigator);
+}
+hi()

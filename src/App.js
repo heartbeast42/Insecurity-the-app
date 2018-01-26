@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, browserHistory, Route, Link } from 'react-router';
+import { Router, browserHistory, Route } from 'react-router';
 import './App.css';
 import Navbar from './component.navbar.js';
 import CardList from './component.cardlist.js';
@@ -16,7 +16,7 @@ const Page = ({ title }) => (
         <div></div>
       </div>
       {/* that thar's the CardList */}
-    <CardList/>
+    <CardList id="cardList" />
     </main>
   </div>
 );

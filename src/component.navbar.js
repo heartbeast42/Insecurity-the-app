@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Router, browserHistory, Route, Link } from 'react-router';
+import { Link } from 'react-router';
 
 
 class Navbar extends Component {
   constructor(props, context) {
     super(props, context);
-
     this.navDismiss = this.navDismiss.bind(this);
     this.navShow = this.navShow.bind(this);
 
@@ -30,7 +29,7 @@ class Navbar extends Component {
           {/* close icon */}
           <div className="close-div">
             <div onClick={this.navDismiss}>
-              <img className="closeMenu" src="./img/close2.png" />
+              <img className="closeMenu" src="./img/close2.png" alt="close navigation menu" />
             </div>
           </div>
 
@@ -60,7 +59,7 @@ class Navbar extends Component {
       return(
         <div>
           <div id="menuButton" onClick={this.navShow}>
-            <img className="openMenu" src="./img/hamburgerMenu.png" />
+            <img className="openMenu" src="./img/hamburgerMenu.png" alt="open navigation menu" />
           </div>
         </div>
       )

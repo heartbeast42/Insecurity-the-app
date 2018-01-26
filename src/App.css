@@ -91,6 +91,16 @@
   border: 2px solid #0000;
 }
 
+.card {
+  border: 2px solid #eee;
+  border-radius: 2em;
+}
+
+#cardList {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 main {
   width: 100vw;
   /* position: absolute; */
@@ -107,6 +117,7 @@ a {
   to { transform: rotate(360deg); }
 } */
 
+/* tablet */
 @media (min-width:400px) {
   .navBar {
     width: 35%;
@@ -115,10 +126,15 @@ a {
   }
 }
 
+/* Desktop */
 @media (min-width:900px) {
   .navBar {
     width: 20%;
     /* position: absolute; */
     /* z-index: 0; */
+  }
+
+  .card {
+    width: 50vw;
   }
 }
