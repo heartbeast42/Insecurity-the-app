@@ -2,16 +2,21 @@ import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
 import './App.css';
 import Navbar from './component.navbar.js';
+import CardList from './component.cardlist.js';
+
 
 const Page = ({ title }) => (
   <div className="App">
     <Navbar/>
     <main>
+      {/* that thar's the header */}
       <div className="App-header">
         <div className="titleSpacer"></div>
         <h1>Insecurity the app</h1>
         <div></div>
       </div>
+      {/* that thar's the CardList */}
+    <CardList/>
     </main>
   </div>
 );

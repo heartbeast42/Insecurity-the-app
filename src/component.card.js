@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
-import Card from './component.card.js';
 
-class CardList extends Component {
+class Card extends Component {
   constructor(props, context) {
     super(props, context);
   }
@@ -10,9 +9,9 @@ class CardList extends Component {
 
   render() {
     return (
-      <Card/>
+      <p>hi there</p>
     )
   }
 }
 
-export default CardList;
+export default Card;
