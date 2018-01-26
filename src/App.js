@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
 import './App.css';
-import Navbar from './navbar.js';
+import Navbar from './component.navbar.js';
 
 const Page = ({ title }) => (
   <div className="App">
