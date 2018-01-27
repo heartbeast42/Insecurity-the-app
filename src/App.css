@@ -91,14 +91,17 @@
   border: 2px solid #0000;
 }
 
+.cardList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 .card {
   border: 2px solid #eee;
   border-radius: 2em;
-}
-
-#cardList {
-  display: flex;
-  flex-flow: row wrap;
+  margin: 20px 20px 0px 20px;
+  width: 500px;
 }
 
 main {
@@ -135,6 +138,6 @@ a {
   }
 
   .card {
-    width: 50vw;
+    /* width: 50vw; */
   }
 }

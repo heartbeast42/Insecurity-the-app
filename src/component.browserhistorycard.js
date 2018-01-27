@@ -10,7 +10,7 @@ class BrowserHistoryCard extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <h4>Browser history: ...</h4>
         <div className="card-content">
           <ol>

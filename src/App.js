@@ -16,7 +16,7 @@ const Page = ({ title }) => (
         <div></div>
       </div>
       {/* that thar's the CardList */}
-    <CardList id="cardList" />
+      <CardList/>
     </main>
   </div>
 );

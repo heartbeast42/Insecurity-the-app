@@ -10,7 +10,7 @@ class Card extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card" >
         <h4>Title: ...</h4>
         <div className="card-content">
           <ol>

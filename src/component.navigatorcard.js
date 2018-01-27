@@ -10,7 +10,7 @@ class NavigatorCard extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <h4>window.navigator: ...</h4>
         <div className="card-content">
           <ol>

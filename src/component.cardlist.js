@@ -18,10 +18,10 @@ class CardList extends Component {
       //   somthing somthing somthing darkside
       //   somthing somthing somthing display <Card/>
       // }
-      <div>
-        <HTTPinterceptCard className="card" />
-        <BrowserHistoryCard className="card" />
-        <NavigatorCard className="card" />
+      <div className="cardList" >
+        <HTTPinterceptCard/>
+        <BrowserHistoryCard/>
+        <NavigatorCard/>
       </div>
     )
   }

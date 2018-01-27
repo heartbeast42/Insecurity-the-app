@@ -10,7 +10,7 @@ class HTTPinterceptCard extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <h4>HTTP Trafic: ...</h4>
         <div className="card-content">
           <ol>
