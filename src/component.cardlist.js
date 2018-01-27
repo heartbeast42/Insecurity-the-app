@@ -18,9 +18,9 @@ class CardList extends Component {
       //   somthing somthing somthing display <Card/>
       // }
       <div>
+        <Card className="card" />
         <BrowserHistoryCard className="card" />
         <NavigatorCard className="card" />
-        <Card className="card" />
       </div>
     )
   }
