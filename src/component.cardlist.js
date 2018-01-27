@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // import { Router, browserHistory, Route, Link } from 'react-router';
 import Card from './component.card.js';
+import BrowserHistoryCard from './component.browserhistorycard.js';
+import NavigatorCard from './component.navigatorcard.js';
 
 class CardList extends Component {
 
@@ -16,7 +18,8 @@ class CardList extends Component {
       //   somthing somthing somthing display <Card/>
       // }
       <div>
-        <Card className="card" />
+        <BrowserHistoryCard className="card" />
+        <NavigatorCard className="card" />
         <Card className="card" />
       </div>
     )

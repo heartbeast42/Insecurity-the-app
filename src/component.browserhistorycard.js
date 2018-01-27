@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { Router, browserHistory, Route, Link } from 'react-router';
 
-class Card extends Component {
+class BrowserHistoryCard extends Component {
 
   // constructor(props, context) {
   //   super(props, context);
@@ -28,4 +28,4 @@ class Card extends Component {
   }
 }
 
-export default Card;
+export default BrowserHistoryCard;
