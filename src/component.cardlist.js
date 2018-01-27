@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Card from './component.card.js';
 import BrowserHistoryCard from './component.browserhistorycard.js';
 import NavigatorCard from './component.navigatorcard.js';
+import HTTPinterceptCard from './component.httpinterceptcard.js';
 
 class CardList extends Component {
 
@@ -18,7 +19,7 @@ class CardList extends Component {
       //   somthing somthing somthing display <Card/>
       // }
       <div>
-        <Card className="card" />
+        <HTTPinterceptCard className="card" />
         <BrowserHistoryCard className="card" />
         <NavigatorCard className="card" />
       </div>

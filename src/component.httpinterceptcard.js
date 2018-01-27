@@ -1,8 +1,8 @@
-// navigator
+// http trafic
 import React, { Component } from 'react';
 // import { Router, browserHistory, Route, Link } from 'react-router';
 
-class NavigatorCard extends Component {
+class HTTPinterceptCard extends Component {
 
   // constructor(props, context) {
   //   super(props, context);
@@ -11,7 +11,7 @@ class NavigatorCard extends Component {
   render() {
     return (
       <div>
-        <h4>window.navigator: ...</h4>
+        <h4>HTTP Trafic: ...</h4>
         <div className="card-content">
           <ol>
             <li></li>
@@ -29,4 +29,4 @@ class NavigatorCard extends Component {
   }
 }
 
-export default NavigatorCard;
+export default HTTPinterceptCard;

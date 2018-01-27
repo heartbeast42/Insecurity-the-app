@@ -1,3 +1,4 @@
+// genaric card
 import React, { Component } from 'react';
 // import { Router, browserHistory, Route, Link } from 'react-router';
 

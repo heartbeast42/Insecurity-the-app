@@ -1,3 +1,4 @@
+// browser history
 import React, { Component } from 'react';
 // import { Router, browserHistory, Route, Link } from 'react-router';
 
@@ -10,7 +11,7 @@ class BrowserHistoryCard extends Component {
   render() {
     return (
       <div>
-        <h4>Title: ...</h4>
+        <h4>Browser history: ...</h4>
         <div className="card-content">
           <ol>
             <li></li>
