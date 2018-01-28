@@ -12,7 +12,7 @@ export default function registerServiceWorker(){
 
   }
 }
-console.log("THIS is registerServiceWorker.js");
+// console.log("THIS is registerServiceWorker.js");
 
 // Function to perform HTTP request
 // var get = function(url) {
