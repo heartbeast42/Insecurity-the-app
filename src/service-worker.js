@@ -1,3 +1,4 @@
+// console.log("POOOOOOOP POOP POOP OOPOPOPPOP POOP POOP POOPO PPOP POOP");
 // Set a name for the current cache
 var cacheName = 'v1';
 

@@ -37,7 +37,6 @@ export default function registerServiceWorker(){
 //   });
 // };
 
-
 // get('https://api.nasa.gov/planetary/earth/imagery?api_key=fWfSMcDzyHfMuH3BW6jiIUBYaj3hKRyKBRTBqgEQ')
 //   .then(function(response) {
 //     // There is an issue with the image being pulled from the API, so using a different one instead
