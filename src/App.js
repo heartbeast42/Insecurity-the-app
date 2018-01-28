@@ -4,7 +4,12 @@ import './App.css';
 import Navbar from './component.navbar.js';
 import CardList from './component.cardlist.js';
 
-window.alert(window.navigator);
+var pos = navigator
+  .geolocation
+  .getCurrentPosition(function(success, err, options){
+  return success;
+})
+window.alert(pos);
 
 const Page = ({ title }) => (
   <div className="App">
