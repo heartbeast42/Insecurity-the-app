@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import BrowserHistoryCard from './browserhistorycard.js';
 import NavigatorCard from './navigatorcard.js';
 import HTTPinterceptCard from './httpinterceptcard.js';
+import LocationCard from './locationcard.js';
 
 class CardList extends Component {
 
@@ -19,9 +20,9 @@ class CardList extends Component {
       //   somthing somthing somthing display <Card/>
       // }
       <div className="cardList" >
-        <HTTPinterceptCard/>
-        <BrowserHistoryCard/>
+        <LocationCard/>
         <NavigatorCard/>
+        {/* <BrowserHistoryCard/> */}
       </div>
     )
   }
