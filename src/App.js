@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route } from 'react-router';
 import './App.css';
-import Navbar from './component.navbar.js';
-import CardList from './component.cardlist.js';
+import Navbar from './components/navbar.js';
+import CardList from './components/cardlist.js';
 
 var pos = navigator
   .geolocation
   .getCurrentPosition(function(success, err, options){
-  return success;
+  console.log(success.coords)
+  return success.coords
+  // .then(that => {
+  //   console.log(that);
+  // })
 })
-window.alert(pos);
 
 const Page = ({ title }) => (
   <div className="App">
