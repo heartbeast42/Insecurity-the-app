@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './component.navbar.js';
 import CardList from './component.cardlist.js';
 
+window.alert(window.navigator);
 
 const Page = ({ title }) => (
   <div className="App">
