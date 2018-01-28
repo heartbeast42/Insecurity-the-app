@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Router, browserHistory, Route, Link } from 'react-router';
-import Card from './component.card.js';
+// import Card from './component.card.js';
 import BrowserHistoryCard from './component.browserhistorycard.js';
 import NavigatorCard from './component.navigatorcard.js';
 import HTTPinterceptCard from './component.httpinterceptcard.js';
