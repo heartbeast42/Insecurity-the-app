@@ -38,7 +38,7 @@ class Navbar extends Component {
             <Link to="/login">Login</Link>
           </p>
           <p>
-            <Link to="/">Volnerabilities</Link>
+            <Link to="/">Vulnerabilities</Link>
           </p>
           <p>
             <Link to="/my-solutions">My Solutions</Link>
