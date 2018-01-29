@@ -38,8 +38,8 @@
   width: 61%;
   height: 100vh;
   padding-left: 20px;
-  position: absolute;
-  z-index: 2;
+  /* position: absolute; */
+  /* z-index: 2; */
 }
 
 .navItems {
@@ -102,7 +102,8 @@
   border-radius: 2em;
   margin: 20px 20px 0px 20px;
   width: 300px;
-  height: 275px;
+  height: 350px;
+  padding: 20px;
 }
 
 .card-content img {
@@ -110,8 +111,26 @@
   height: 200px;
   border-radius: 2em;
 }
+
 .card-content ul {
   text-align: left;
+  line-height: 2em;
+}
+
+.about-img {
+  width: 75%;
+  height: auto;
+}
+
+.about-page p {
+  width: 75%;
+  height: auto;
+  text-align: center;
+}
+.about-page {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 main {
@@ -130,24 +149,32 @@ a {
   to { transform: rotate(360deg); }
 } */
 
+/* Desktop */
+@media (min-width:900px) {
+  .navBar {
+    width: 20%;
+  }
+}
+
 /* tablet */
-@media (min-width:400px) {
+@media (max-width:770px) {
   .navBar {
     width: 35%;
     /* position: absolute; */
     /* z-index: 0; */
   }
+
 }
 
-/* Desktop */
-@media (min-width:900px) {
+/* Mibile */
+@media (max-width:900px) {
   .navBar {
-    width: 20%;
-    /* position: absolute; */
-    /* z-index: 0; */
+    width: 35%;
+    position: absolute;
+    z-index: 2;
   }
+}
 
-  .card {
-    /* width: 50vw; */
-  }
+@media (max-width:440px) {
+
 }

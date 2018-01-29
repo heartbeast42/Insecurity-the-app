@@ -3,6 +3,7 @@ import { Router, browserHistory, Route } from 'react-router';
 import './App.css';
 import Navbar from './components/navbar.js';
 import CardList from './components/cardlist.js';
+import About from './components/about.js';
 
 // var pos = navigator
 //   .geolocation
@@ -11,7 +12,7 @@ import CardList from './components/cardlist.js';
 //   return success.coords
 // })
 
-const Vulnerabilities = ({ title }) => (
+const Vulnerabilities = () => (
   <div className="App">
     <Navbar/>
     <main>
@@ -22,7 +23,7 @@ const Vulnerabilities = ({ title }) => (
         <div></div>
       </div>
       {/* that thar's the CardList */}
-      <CardList/>
+      <CardList />
     </main>
   </div>
 );
@@ -34,10 +35,11 @@ class App extends Component {
         <Router history={browserHistory}>
           {/* <Route path="/login" component={Vulnerabilities}/> */}
           <Route path="/" component={Vulnerabilities}/>
+          <Route path="/vulnerabilities" component={Vulnerabilities}/>
           {/* <Route path="/my-solutions" component={Vulnerabilities}/> */}
-          <Route path="/all-solutions" component={Vulnerabilities}/>
+          <Route path="/solutions" component={Vulnerabilities}/>
           {/* <Route path="/downloads" component={Vulnerabilities}/> */}
-          <Route path="/about" component={Vulnerabilities}/>
+          <Route path="/about" component={About}/>
         </Router>
       </div>
     );

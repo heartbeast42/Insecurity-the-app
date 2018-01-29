@@ -34,24 +34,13 @@ class Navbar extends Component {
           </div>
 
           {/* actual nav items */}
-          <p>
-            <Link to="/login">Login</Link>
-          </p>
-          <p>
-            <Link to="/">Vulnerabilities</Link>
-          </p>
-          <p>
-            <Link to="/my-solutions">My Solutions</Link>
-          </p>
-          <p>
-            <Link to="/all-solutions">All Solutions</Link>
-          </p>
-          <p>
-            <Link to="/downloads">Downloads</Link>
-          </p>
-          <p>
-            <Link to="/about">About this app</Link>
-          </p>
+          {/*<p><Link to="/login">Login</Link></p>*/}
+          <p><Link to="/">Vulnerabilities</Link></p>
+          {/* <p><Link to="/my-solutions">My Solutions</Link></p> */}
+          {/* <p><Link to="/all-solutions">All Solutions</Link></p> */}
+          <p><Link to="/solutions">Solutions</Link></p>
+          {/* <p><Link to="/downloads">Downloads</Link></p> */}
+          <p><Link to="/about">About this app</Link></p>
 
         </nav>
       )
