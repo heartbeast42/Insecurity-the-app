@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/navbar.js';
 import CardList from './components/cardlist.js';
 import About from './components/about.js';
+import Solutions from './components/solutions.js';
 
 // var pos = navigator
 //   .geolocation
@@ -37,7 +38,8 @@ class App extends Component {
           <Route path="/" component={Vulnerabilities}/>
           <Route path="/vulnerabilities" component={Vulnerabilities}/>
           {/* <Route path="/my-solutions" component={Vulnerabilities}/> */}
-          <Route path="/solutions" component={Vulnerabilities}/>
+          {/* <Route path="/all-solutions" component={Vulnerabilities}/> */}
+          <Route path="/solutions" component={Solutions}/>
           {/* <Route path="/downloads" component={Vulnerabilities}/> */}
           <Route path="/about" component={About}/>
         </Router>

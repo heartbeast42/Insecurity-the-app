@@ -150,6 +150,13 @@ a {
 } */
 
 /* Desktop */
+@media (orientation:landscape) {
+  .about-img {
+    width: 50%;
+    height: auto;
+  }
+}
+
 @media (min-width:900px) {
   .navBar {
     width: 20%;

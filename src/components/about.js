@@ -23,7 +23,7 @@ class About extends Component {
 
           <img className="about-img" alt="" src="../img/sec.jpg" />
           <h3> About this app </h3>
-          <p>Please note thatthis app is in alpha with more features to come</p>
+          <p>Please note that this app is in alpha with more features to come</p>
           <p> Insecurity the app is intended to be a tool for learning about the importance of data security.  We all love to browse the internet and in the modern world sharing some data can enhance our expirences online although many people are still unconvenced that there is anything to worry about.  I believe that there should be easy, clear in the moment transparency that and Insecurity the app seeks to make that information easily accessable to the lay person </p>
         </main>
       </div>
