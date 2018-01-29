@@ -4,15 +4,12 @@ import './App.css';
 import Navbar from './components/navbar.js';
 import CardList from './components/cardlist.js';
 
-var pos = navigator
-  .geolocation
-  .getCurrentPosition(function(success, err, options){
-  console.log(success.coords)
-  return success.coords
-  // .then(that => {
-  //   console.log(that);
-  // })
-})
+// var pos = navigator
+//   .geolocation
+//   .getCurrentPosition(function(success, err, options){
+//   console.log(success.coords)
+//   return success.coords
+// })
 
 const Page = ({ title }) => (
   <div className="App">
