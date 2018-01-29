@@ -127,6 +127,9 @@
 .card-content button h1 {
   text-decoration: underline;
 }
+.card-content button {
+  background-color: #222
+}
 
 .about-img {
   width: 75%;
