@@ -17,7 +17,7 @@ class CardList extends Component {
       <div className="cardList" >
         <LocationCard/>
         <NavigatorCard/>
-        <BrowserHistoryCard/>
+        {/* <BrowserHistoryCard/> */}
       </div>
     )
   }

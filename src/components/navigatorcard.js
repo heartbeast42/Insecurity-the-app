@@ -11,19 +11,19 @@ class NavigatorCard extends Component {
   render() {
     return (
       <div className="card">
-        <h4>window.navigator: ...</h4>
+        <h4>System information</h4>
         <div className="card-content">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
+          <ul>
+            <li>Memory: 8gb</li>
+            <li>Platform: MacIntel</li>
+            <li>Browser: Chrome 63</li>
+            <li>Battery: 98%</li>
+            <li>Network Type: 4g</li>
+            <li>Network Down Speed: 6.75</li>
+          </ul>
         </div>
-        <h4>Description: ...</h4>
-        <h4>Solutions: ...</h4>
+        {/* <h4>Description: ...</h4>
+        <h4>Solutions: ...</h4> */}
       </div>
     )
   }

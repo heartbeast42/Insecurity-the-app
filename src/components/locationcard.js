@@ -25,10 +25,8 @@ class LocationCard extends Component {
     return (
       <div className="card" >
         <h4>Your Current Location ...</h4>
-        <div className="">
-          <p>your latitude is -105.00691189999999</p>
-          <p>your longitude is 39.7575505</p>
-          <p>{pos}</p>
+        <div className="card-content">
+          <img src="./img/map-screenshot.png" />
         </div>
         {/* <h4>Description: ...</h4> */}
         {/* <h4>Solutions: ...</h4> */}
