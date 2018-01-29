@@ -20,11 +20,21 @@ class Solutions extends Component {
             <h1>Insecurity the app</h1>
             <div></div>
           </div>
-
-          <img className="about-img" alt="" src="../img/sec.jpg" />
-          <h3> About this app </h3>
+          <h3> Some Solutions </h3>
           <p>Please note that this app is in alpha with more features to come</p>
-          <p> </p>
+          <p> This section contains several rescources for keeping your information secure/private and provides some secure alternatives too popular apps that may not reguard your information with the as much respect as we'd like. </p>
+
+          <table>
+            <tr>
+              <td><h3>Item Name</h3></td>
+              <td><h3>Decryption</h3></td>
+            </tr>
+            <tr>
+              <td><h3>Item Name</h3></td>
+              <td><h3>Decryption</h3></td>
+            </tr>
+          </table>
+
         </main>
       </div>
     )

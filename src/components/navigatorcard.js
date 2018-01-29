@@ -20,6 +20,7 @@ class NavigatorCard extends Component {
             <li>Battery: 98%</li>
             <li>Network Type: 4g</li>
             <li>Network Down Speed: 6.75</li>
+            <li>Projected Home address: 1644 Platte St, Denver, CO 80202</li>
           </ul>
         </div>
         {/* <h4>Description: ...</h4>

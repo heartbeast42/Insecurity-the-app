@@ -147,6 +147,12 @@
   align-items: center;
 }
 
+td img {
+  width: 50px;
+  height: auto;
+  margin: 10px
+}
+
 main {
   width: 100vw;
   /* position: absolute; */
