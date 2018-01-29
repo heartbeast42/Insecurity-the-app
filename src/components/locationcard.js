@@ -17,9 +17,10 @@ class LocationCard extends Component {
       .getCurrentPosition(function(success, err, options) {
         let lat = success.coords.latitude
         let lng = success.coords.longitude
+        let position = [lat, lng]
         console.log(lng)
         console.log(lat)
-        return lat, lng
+        return position
       })
     return (
       <div className="card" >
