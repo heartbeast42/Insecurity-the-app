@@ -19,6 +19,7 @@
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 
 .App-title {
@@ -148,7 +149,7 @@
 }
 
 td img {
-  width: 50px;
+  width: 150px;
   height: auto;
   margin: 10px
 }

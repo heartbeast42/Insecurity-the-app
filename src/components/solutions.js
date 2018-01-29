@@ -14,24 +14,62 @@ class Solutions extends Component {
       <div className="App">
         <Navbar/>
         <main className="about-page">
-          {/* that thar's the header */}
           <div className="App-header">
             <div className="titleSpacer"></div>
             <h1>Insecurity the app</h1>
             <div></div>
           </div>
+
           <h3> Some Solutions </h3>
-          <p>Please note that this app is in alpha with more features to come</p>
-          <p> This section contains several rescources for keeping your information secure/private and provides some secure alternatives too popular apps that may not reguard your information with the as much respect as we'd like. </p>
+          <p>Please note that this app is in alpha with more features to come. </p>
+          <p> This section contains several resources for keeping your information secure/private and provides some secure alternatives too popular apps that may not reguard your information with the as much respect as we'd like. </p>
 
           <table>
             <tr>
-              <td><h3>Item Name</h3></td>
-              <td><h3>Decryption</h3></td>
+              <th>Item Name</th>
+              <th>Decryption</th>
             </tr>
             <tr>
-              <td><h3>Item Name</h3></td>
-              <td><h3>Decryption</h3></td>
+              <td>
+                <div>
+                  <img alt="" src="./img/PureVPN.png" />
+                </div>
+              </td>
+              <td><h4>VPN</h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <img alt="" src="./img/signal.png" />
+                  <img alt="" src="./img/telegram.jpg" />
+                </div>
+              </td>
+              <td><h4>Secure messangers</h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <img alt="" src="./img/spideroak.jpg" />
+                </div>
+              </td>
+              <td><h4>Cloud</h4></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div>
+                  <img alt="" src="./img/duckduckgo.jpg" />
+                </div>
+              </td>
+              <td><h4>Serach Engines</h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <img alt="" src="./img/brave.jpg" />
+                </div>
+              </td>
+              <td><h4>Brave</h4></td>
             </tr>
           </table>
 

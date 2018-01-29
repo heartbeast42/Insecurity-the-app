@@ -17,13 +17,13 @@ const Vulnerabilities = () => (
   <div className="App">
     <Navbar/>
     <main>
-      {/* that thar's the header */}
+
       <div className="App-header">
         <div className="titleSpacer"></div>
         <h1>Insecurity the app</h1>
         <div></div>
       </div>
-      {/* that thar's the CardList */}
+
       <CardList />
     </main>
   </div>
