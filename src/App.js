@@ -11,7 +11,7 @@ import CardList from './components/cardlist.js';
 //   return success.coords
 // })
 
-const Page = ({ title }) => (
+const Vulnerabilities = ({ title }) => (
   <div className="App">
     <Navbar/>
     <main>
@@ -32,12 +32,12 @@ class App extends Component {
     return (
       <div id="root">
         <Router history={browserHistory}>
-          <Route path="/login" component={Page}/>
-          <Route path="/" component={Page}/>
-          <Route path="/my-solutions" component={Page}/>
-          <Route path="/all-solutions" component={Page}/>
-          <Route path="/downloads" component={Page}/>
-          <Route path="/about" component={Page}/>
+          {/* <Route path="/login" component={Vulnerabilities}/> */}
+          <Route path="/" component={Vulnerabilities}/>
+          {/* <Route path="/my-solutions" component={Vulnerabilities}/> */}
+          <Route path="/all-solutions" component={Vulnerabilities}/>
+          {/* <Route path="/downloads" component={Vulnerabilities}/> */}
+          <Route path="/about" component={Vulnerabilities}/>
         </Router>
       </div>
     );
