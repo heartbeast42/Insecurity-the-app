@@ -31,8 +31,8 @@ class LocationCard extends Component {
 
     return (
       <div className="card" >
-        <h4>Your Current Location ...</h4>
         <div className="card-content">
+          <h4>Your Current Location ...</h4>
           <img src="./img/map-screenshot.png" />
           <p>Latitude: {this.state.lat}</p>
           <p>Longitude: {this.state.lng}</p>

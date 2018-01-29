@@ -112,9 +112,20 @@
   border-radius: 2em;
 }
 
+.card-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-content ul {
   text-align: left;
   line-height: 2em;
+}
+
+.card-content button h1 {
+  text-decoration: underline;
 }
 
 .about-img {

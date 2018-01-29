@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Router, browserHistory, Route, Link } from 'react-router';
-// import Card from './component.card.js';
+import Card from './card.js';
 import BrowserHistoryCard from './browserhistorycard.js';
 import NavigatorCard from './navigatorcard.js';
 // import HTTPinterceptCard from './httpinterceptcard.js';
@@ -15,9 +15,9 @@ class CardList extends Component {
   render() {
     return (
       <div className="cardList" >
-        <LocationCard/>
-        <NavigatorCard/>
-        {/* <BrowserHistoryCard/> */}
+        <LocationCard />
+        <NavigatorCard />
+        <Card />
       </div>
     )
   }

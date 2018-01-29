@@ -1,5 +1,7 @@
 // genaric card
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+
 // import { Router, browserHistory, Route, Link } from 'react-router';
 
 class Card extends Component {
@@ -11,19 +13,13 @@ class Card extends Component {
   render() {
     return (
       <div className="card" >
-        <h4>Title: ...</h4>
         <div className="card-content">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
+          <h4>More is yet to come ...</h4>
+
+          <h3>If you would like to know more about htis project click the link below</h3>
+          <button><h1><Link to="/about">About this app</Link></h1></button>
+
         </div>
-        <h4>Description: ...</h4>
-        <h4>Solutions: ...</h4>
       </div>
     )
   }
