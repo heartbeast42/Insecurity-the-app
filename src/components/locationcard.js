@@ -17,20 +17,17 @@ class LocationCard extends Component {
       .getCurrentPosition(function(success, err, options) {
         let lat = success.coords.latitude
         let lng = success.coords.longitude
-        console.log(lng);
-        console.log(lat);
-        return lat
+        console.log(lng)
+        console.log(lat)
+        return lat, lng
       })
     return (
       <div className="card" >
         <h4>Your Current Location ...</h4>
         <div className="">
-          <p>"hi"</p>
-          <p>{
-            navigator.geolocation.getCurrentPosition(function(success){
-              return success.coords.latitude
-            })
-          }</p>
+          <p>your latitude is -105.00691189999999</p>
+          <p>your longitude is 39.7575505</p>
+          <p>{pos}</p>
         </div>
         {/* <h4>Description: ...</h4> */}
         {/* <h4>Solutions: ...</h4> */}
