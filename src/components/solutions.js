@@ -27,7 +27,7 @@ class Solutions extends Component {
           <table>
             <tr>
               <th>Item Name</th>
-              <th>Decryption</th>
+              <th>Decription</th>
             </tr>
             <tr>
               <td>
