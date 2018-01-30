@@ -14,7 +14,7 @@
   background-color: #000;
   width: 100%;
   height: 50px;
-  padding: 5px;
+  padding: 5px 0px 5px 0px;
   padding-bottom:15px;
   color: white;
   border-bottom: 1px solid #eee;
@@ -26,6 +26,7 @@
 .App-header h1 {
   overflow: hidden;
   margin: 4px;
+  margin-top: 8px;
 }
 
 .App-title {
