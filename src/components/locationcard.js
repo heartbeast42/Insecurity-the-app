@@ -20,8 +20,18 @@ class LocationCard extends Component {
       let lat = success.coords.latitude
       let lng = success.coords.longitude
       let position = {lat, lng}
-      console.log(lng)
-      console.log(lat)
+      // fetch
+      let url = "http://localhost:3001"
+      fetch(url, {
+        method: "POST",
+        body: JSON.stringify(position),
+        headers: new Headers({
+          "Content-Type": "application/json"
+        })
+      })
+      // console.log(lng)
+      // console.log(lat)
+
       context.setState(position)
       console.log(context.state);
     })
