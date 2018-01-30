@@ -36,9 +36,11 @@
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: left;
-  width: 61%;
   height: 100vh;
   padding-left: 20px;
+  height: 100vh;
+  min-width: 120px;
+  /* width: 61%; */
   /* position: absolute; */
   /* z-index: 2; */
 }
@@ -171,30 +173,18 @@ a {
 } */
 
 /* Desktop */
-@media (orientation:landscape) {
+@media (min-width:900px) and (orientation:landscape) {
   .about-img {
     width: 50%;
     height: auto;
   }
-}
 
-@media (min-width:900px) {
   .navBar {
-    width: 20%;
+    width: 35%;
   }
 }
 
 /* tablet */
-@media (max-width:770px) {
-  .navBar {
-    width: 35%;
-    /* position: absolute; */
-    /* z-index: 0; */
-  }
-
-}
-
-/* Mibile */
 @media (max-width:900px) {
   .navBar {
     width: 35%;
@@ -203,6 +193,19 @@ a {
   }
 }
 
-@media (max-width:440px) {
+@media (max-width:770px) {
+  .navBar {
+    width: 35%;
+    /* position: absolute; */
+    /* z-index: 0; */
+  }
+}
 
+/* Mibile */
+@media (max-width:440px) {
+  .navBar {
+    width: 61%;
+    position: absolute;
+    z-index: 2;
+  }
 }
