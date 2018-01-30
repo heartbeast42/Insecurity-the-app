@@ -32,14 +32,6 @@ class Solutions extends Component {
             <tr>
               <td>
                 <div>
-                  <img alt="" src="./img/PureVPN.png" />
-                </div>
-              </td>
-              <td><h4>VPN</h4></td>
-            </tr>
-            <tr>
-              <td>
-                <div>
                   <img alt="" src="./img/signal.png" />
                   <img alt="" src="./img/telegram.jpg" />
                 </div>
@@ -66,10 +58,18 @@ class Solutions extends Component {
             <tr>
               <td>
                 <div>
+                  <img alt="" src="./img/PureVPN.png" />
+                </div>
+              </td>
+              <td><h4>VPN</h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div>
                   <img alt="" src="./img/brave.jpg" />
                 </div>
               </td>
-              <td><h4>Brave</h4></td>
+              <td><h4>Brave Browser</h4></td>
             </tr>
 
           </table>
