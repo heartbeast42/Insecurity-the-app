@@ -23,6 +23,11 @@
   text-align: center;
 }
 
+.App-header h1 {
+  overflow: hidden;
+  margin: 4px;
+}
+
 .App-title {
   font-size: 1.5em;
 }
@@ -136,6 +141,7 @@
 }
 
 .about-img {
+  margin-top: 15px;
   width: 75%;
   height: auto;
 }
