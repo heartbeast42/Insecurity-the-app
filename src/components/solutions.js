@@ -71,6 +71,7 @@ class Solutions extends Component {
               </td>
               <td><h4>Brave</h4></td>
             </tr>
+
           </table>
 
         </main>
