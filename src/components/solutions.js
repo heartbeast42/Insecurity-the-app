@@ -22,7 +22,7 @@ class Solutions extends Component {
 
           <h3> Some Solutions </h3>
           <p>Please note that this app is in alpha with more features to come. </p>
-          <p> This section contains several resources for keeping your information secure/private and provides some secure alternatives too popular apps that may not reguard your information with the as much respect as we'd like. </p>
+          <p> This section contains several resources for keeping your information secure/private and provides some secure alternatives too popular apps that may not regard your information with the as much respect as we'd like. </p>
 
           <table>
             <tr>
