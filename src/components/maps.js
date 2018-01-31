@@ -5,6 +5,7 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-map
 // import { Grid, Card, Icon, Feed } from 'semantic-ui-react';
 
 
+console.log("hi");
 
 
 const MyMapComponent = compose(
