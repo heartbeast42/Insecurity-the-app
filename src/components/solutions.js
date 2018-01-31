@@ -53,7 +53,7 @@ class Solutions extends Component {
                   <img alt="" src="./img/duckduckgo.jpg" />
                 </div>
               </td>
-              <td><h4>Serach Engines</h4></td>
+              <td><h4>Search Engines</h4></td>
             </tr>
             <tr>
               <td>
