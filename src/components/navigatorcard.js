@@ -9,8 +9,8 @@ class NavigatorCard extends Component {
     platform: navigator.platform,
     charging: null,
     battLvl: null,
-    networkType: navigator.connection.effectiveType,
-    networkSpeed: navigator.connection.downlink,
+    networkType: navigator.connection.effectiveType || null,
+    networkSpeed: navigator.connection.downlink || null,
   }
 
   componentDidMount() {
