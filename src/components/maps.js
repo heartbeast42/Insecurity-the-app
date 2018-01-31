@@ -28,8 +28,8 @@ const MyMapComponent = compose(
     // mapElement: <div style={{ height: `100%`, width: `800px` }} />,
 
     center: {
-      lat: 39.7576305,
-      lng: -105.0070921
+      lat: 39.733676,
+      lng: -104.992740
     },
   }),
   withScriptjs,
@@ -38,16 +38,16 @@ const MyMapComponent = compose(
   <GoogleMap
     defaultZoom={13}
     defaultCenter={{
-      lat: props.x || 39.7576305,
-      lng: props.y || -105.0070921
+      lat: props.x || 39.733676,
+      lng: props.y || -104.992740
     }}
   >
   {/* Hostel Pirwa Colonial Calle Tordo, Cusco 08000, Peru */}
     {props.isMarkerShown &&
       <Marker
         position={{
-        lat: props.x || 39.7576305,
-        lng: props.y || -105.0070921
+        lat: props.x || 39.733676,
+        lng: props.y || -104.992740
       }}
         onClick={props.onMarkerClick}
       />
