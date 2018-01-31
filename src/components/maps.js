@@ -4,9 +4,7 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-map
 // import HostelandTourData from "./HostelandTourData";
 // import { Grid, Card, Icon, Feed } from 'semantic-ui-react';
 
-
 console.log("hi");
-
 
 const MyMapComponent = compose(
   withProps({
@@ -23,17 +21,30 @@ const MyMapComponent = compose(
     mapElement: <div style={{ height: `200px`, width: `250px`}} />,
     // mapElement: <div style={{ height: `100%`, width: `800px` }} />,
 
-    center: { lat: 39.7576134, lng: -105.0070921 },
+    center: {
+      lat: navigator.geolocation.getCurrentPosition(function(data) { return(data.coords.latitude)
+      }),
+      lng: navigator.geolocation.getCurrentPosition(function(data) { return(data.coords.longitude)
+      })
+    },
   }),
   withScriptjs,
   withGoogleMap
 )((props) =>
   <GoogleMap
     defaultZoom={13}
-    defaultCenter={{ lat: 39.7576134, lng: -105.0070921 }}
+    defaultCenter={{
+      lat: 39.7576134,
+      lng: -105.0070921
+    }}
   >
   {/* Hostel Pirwa Colonial Calle Tordo, Cusco 08000, Peru */}
-    {props.isMarkerShown && <Marker position={{ lat: 39.7576134, lng: -105.0070921 }} onClick={props.onMarkerClick} />}
+    {props.isMarkerShown && <Marker position={{
+      lat: navigator.geolocation.getCurrentPosition(function(data) { return(data.coords.latitude)
+      }),
+      lng: navigator.geolocation.getCurrentPosition(function(data) { return(data.coords.longitude)
+      })
+    }} onClick={props.onMarkerClick} />}
   </GoogleMap>
 );
 
