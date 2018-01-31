@@ -1,10 +1,10 @@
 // genaric card
 import React, { Component } from 'react';
+import Gmaps from './maps.js';
+
 // import { Router, browserHistory, Route, Link } from 'react-router';
 
 // var key = "AIzaSyBrZPy5tN2veJeIY4LXn2K3pCYcuu0-AVc"
-
-
 
 // fetch(`https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`)
   // .then()
@@ -40,7 +40,8 @@ class LocationCard extends Component {
       <div className="card" >
         <div className="card-content">
           <h4>Your Current Location ...</h4>
-          <img src="./img/map-screenshot.png" />
+          {/* <img src="./img/map-screenshot.png" /> */}
+          <Gmaps />
           <p>Latitude: {this.state.lat}</p>
           <p>Longitude: {this.state.lng}</p>
         </div>
