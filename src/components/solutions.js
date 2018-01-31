@@ -58,7 +58,7 @@ class Solutions extends Component {
             <tr>
               <td>
                 <div>
-                  <img alt="" src="./img/PureVPN.png" />
+                  <img alt="" src="./img/purevpn.png" />
                 </div>
               </td>
               <td><h4>VPN</h4></td>
