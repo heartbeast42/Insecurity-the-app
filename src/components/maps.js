@@ -4,7 +4,13 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-map
 // import HostelandTourData from "./HostelandTourData";
 // import { Grid, Card, Icon, Feed } from 'semantic-ui-react';
 
-console.log("hi");
+// console.log("hi");
+// var latitude = navigator.geolocation.getCurrentPosition(function(data) {
+//   return (data.coords.latitude)
+// })
+// var longitude = navigator.geolocation.getCurrentPosition(function(data) {
+//   return (data.coords.longitude)
+// })
 
 const MyMapComponent = compose(
   withProps({
@@ -22,10 +28,8 @@ const MyMapComponent = compose(
     // mapElement: <div style={{ height: `100%`, width: `800px` }} />,
 
     center: {
-      lat: navigator.geolocation.getCurrentPosition(function(data) { return(data.coords.latitude)
-      }),
-      lng: navigator.geolocation.getCurrentPosition(function(data) { return(data.coords.longitude)
-      })
+      lat: 39.7576305,
+      lng: -105.0070921
     },
   }),
   withScriptjs,
@@ -34,17 +38,20 @@ const MyMapComponent = compose(
   <GoogleMap
     defaultZoom={13}
     defaultCenter={{
-      lat: 39.7576134,
-      lng: -105.0070921
+      lat: props.x || 39.7576305,
+      lng: props.y || -105.0070921
     }}
   >
   {/* Hostel Pirwa Colonial Calle Tordo, Cusco 08000, Peru */}
-    {props.isMarkerShown && <Marker position={{
-      lat: navigator.geolocation.getCurrentPosition(function(data) { return(data.coords.latitude)
-      }),
-      lng: navigator.geolocation.getCurrentPosition(function(data) { return(data.coords.longitude)
-      })
-    }} onClick={props.onMarkerClick} />}
+    {props.isMarkerShown &&
+      <Marker
+        position={{
+        lat: props.x || 39.7576305,
+        lng: props.y || -105.0070921
+      }}
+        onClick={props.onMarkerClick}
+      />
+    }
   </GoogleMap>
 );
 
@@ -68,6 +75,8 @@ class Gmaps extends React.PureComponent {
     return (
       <div>
         <MyMapComponent
+          x={this.state.lat}
+          y={this.state.lng}
           isMarkerShown={this.state.isMarkerShown}
           onMarkerClick={this.handleMarkerClick}
         />

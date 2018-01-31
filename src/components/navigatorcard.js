@@ -14,7 +14,6 @@ class NavigatorCard extends Component {
   }
 
   componentDidMount() {
-    console.log("hello");
     let context = this
     navigator.getBattery()
     .then(function(data) {

@@ -35,13 +35,13 @@ class LocationCard extends Component {
   }
 
   render() {
-
+    
     return (
       <div className="card" >
         <div className="card-content">
           <h4>Your Current Location ...</h4>
           {/* <img src="./img/map-screenshot.png" /> */}
-          <Gmaps />
+          <Gmaps x={this.state.lat} y={this.state.lng}/>
           <p>Latitude: {this.state.lat}</p>
           <p>Longitude: {this.state.lng}</p>
         </div>
