@@ -4,9 +4,25 @@ import React, { Component } from 'react';
 
 class NavigatorCard extends Component {
 
-  // constructor(props, context) {
-  //   super(props, context);
-  // }
+  state = {
+    memory: navigator.deviceMemory,
+    platform: navigator.platform,
+    charging: null,
+    battLvl: null,
+    networkType: navigator.connection.effectiveType,
+    networkSpeed: navigator.connection.downlink,
+  }
+
+  componentDidMount() {
+    console.log("hello");
+    let context = this
+    navigator.getBattery()
+    .then(function(data) {
+      console.log(data, data.charging);
+      context.setState({charging: data.charging})
+      context.setState({battLvl: data.level})
+    })
+  }
 
   render() {
     return (
@@ -14,12 +30,16 @@ class NavigatorCard extends Component {
         <h4>System information</h4>
         <div className="card-content">
           <ul>
-            <li>Memory: 8gb</li>
-            <li>Platform: MacIntel</li>
-            <li>Browser: Chrome 63</li>
-            <li>Battery: 98%</li>
-            <li>Network Type: 4g</li>
-            <li>Network Down Speed: 6.75</li>
+            <li>Memory: {this.state.memory}</li>
+            <li>Platform: {this.state.platform}</li>
+            <li>Battery:
+              {this.state.charging ? " Charging " : " Not Charging "}
+              {this.state.battLvl * 100}%
+
+            </li>
+            {/* <li>Browser: {this.state.browser}</li> */}
+            <li>Network type: {this.state.networkType}</li>
+            <li>Network speed: {this.state.networkSpeed}</li>
             <li>Projected Home address: 1644 Platte St, Denver, CO 80202</li>
           </ul>
         </div>

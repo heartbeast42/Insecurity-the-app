@@ -29,9 +29,6 @@ class LocationCard extends Component {
           "Content-Type": "application/json"
         })
       })
-      // console.log(lng)
-      // console.log(lat)
-
       context.setState(position)
       console.log(context.state);
     })
@@ -46,10 +43,7 @@ class LocationCard extends Component {
           <img src="./img/map-screenshot.png" />
           <p>Latitude: {this.state.lat}</p>
           <p>Longitude: {this.state.lng}</p>
-          {/* <p>{lng}</p> */}
         </div>
-        {/* <h4>Description: ...</h4> */}
-        {/* <h4>Solutions: ...</h4> */}
       </div>
     )
   }
