@@ -38,16 +38,16 @@ const MyMapComponent = compose(
   <GoogleMap
     defaultZoom={13}
     defaultCenter={{
-      lat: props.x || 39.733676,
-      lng: props.y || -104.992740
+      lat: props.x, //|| 39.733676,
+      lng: props.y //|| -104.992740
     }}
   >
   {/* Hostel Pirwa Colonial Calle Tordo, Cusco 08000, Peru */}
     {props.isMarkerShown &&
       <Marker
         position={{
-        lat: props.x || 39.733676,
-        lng: props.y || -104.992740
+        lat: props.x, //|| 39.733676,
+        lng: props.y //|| -104.992740
       }}
         onClick={props.onMarkerClick}
       />
@@ -75,8 +75,10 @@ class Gmaps extends React.PureComponent {
     return (
       <div>
         <MyMapComponent
-          x={this.state.lat}
-          y={this.state.lng}
+          // x={this.state.lat}
+          // y={this.state.lng}
+          x={39.733676}
+          y={-104.992740}
           isMarkerShown={this.state.isMarkerShown}
           onMarkerClick={this.handleMarkerClick}
         />
